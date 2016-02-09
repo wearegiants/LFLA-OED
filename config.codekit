@@ -139,7 +139,7 @@
 		"outputAbbreviatedPath": "\/assets\/img\/lfla--logo.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/assets\/js\/app.ie.min.js": {
 		"fileType": 64,

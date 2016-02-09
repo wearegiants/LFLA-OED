@@ -21,6 +21,6 @@
 <?php $counter++; endforeach; ?>
 <?php endif; ?>
 
-</ul>
+</div>
 </div>
 </div>
