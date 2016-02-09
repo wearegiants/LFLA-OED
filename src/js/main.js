@@ -1,5 +1,59 @@
 // @codekit-prepend "site/default-ui.js"
 
+function smoothScroll(){
+  $(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top - 60
+          }, 400);
+          return false;
+        }
+      }
+    });
+  });
+}
+
+function headerhover(){
+
+  $(".site-logo").hover(function(){
+    $("#home--header-wrapper > div").addClass('active');
+  });
+
+  $(".section").hover(function(){
+    $("#home--header-wrapper > div").removeClass('active');
+  });
+
+}
+
+function header(){
+
+var options = {
+    offset: 200,
+    classes: {
+        clone:   'banner--clone',
+        stick:   'banner--stick',
+        unstick: 'banner--unstick'
+    },
+    onInit: function() {
+      smoothScroll();
+      mobileNav();
+      headerhover();
+    },
+    onUnstick: function () {
+      $('#mobile-menu').removeClass('open');
+    },
+};
+
+// Initialise with options
+var banner = new Headhesive('#home--header', options);
+
+}
+
+
 function popup(){
 	$('.inline-modal').magnificPopup({
 		type: 'inline',
@@ -31,4 +85,7 @@ function mobileMenu(){
 $(document).ready(function(){
 	mobileMenu();
 	popup();
+	smoothScroll();
+	headerhover();
+	header();
 });
