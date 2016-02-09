@@ -16,6 +16,7 @@
 
 </div>
 </div>
+<img src="/assets/img/document.svg" class="link-bg img-responsive" alt="<?php echo $link['title']; ?>">
 </div>
 
 <?php endforeach; ?>

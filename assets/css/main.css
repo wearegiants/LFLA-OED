@@ -5391,12 +5391,23 @@ input[type=button] {
 }
 .template-links .link {
   color: #fff;
-  background: #666666;
   margin-bottom: 2.08333333%;
 }
 .template-links .link a {
   text-decoration: none;
   color: #fff;
+}
+.template-links .link .centered {
+  top: 55%;
+  z-index: 99;
+}
+.template-links .link-bg {
+  opacity: .2;
+  -webkit-transition: 600ms ease;
+  transition: 600ms ease;
+}
+.template-links .link:hover .link-bg {
+  opacity: 0.4;
 }
 .template-links .link-date {
   color: inherit;
@@ -5407,24 +5418,27 @@ input[type=button] {
   margin: 0;
   line-height: 1.2;
 }
-.template-links .link-subtitle {
-  color: inherit;
-  margin: 0;
-}
 @media screen and (min-width: 300px) {
-  .template-links .link {
-    height: 200px;
+  .template-links .link-title {
+    font-size: 15px;
+    font-size: 0.9375rem;
   }
 }
 @media screen and (min-width: 740px) {
-  .template-links .link {
-    height: 200px;
+  .template-links .link-title {
+    font-size: 18px;
+    font-size: 1.125rem;
   }
 }
 @media screen and (min-width: 980px) {
-  .template-links .link {
-    height: 300px;
+  .template-links .link-title {
+    font-size: 24px;
+    font-size: 1.5rem;
   }
+}
+.template-links .link-subtitle {
+  color: inherit;
+  margin: 0;
 }
 .template-rr .book {
   color: #fff;
