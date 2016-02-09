@@ -1,0 +1,34 @@
+.section {
+
+  padding: @spaced*2.5 0;
+  overflow: hidden;
+  .font_size(19);
+
+  &-header {
+
+  }
+
+  &-title {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 900;
+    color: @blue;
+    text-rendering: optimizeLegibility
+  }
+
+  &-desc {
+    p {
+      color: inherit;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &-bg {
+    background-size: cover;
+    background-position: center center;
+  }
+
+}

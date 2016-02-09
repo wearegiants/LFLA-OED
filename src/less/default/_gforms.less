@@ -1,0 +1,46 @@
+.gform {
+	&_wrapper {
+		min-width: 100%;
+		background: @white;
+		@media @mobile {
+			padding: 0;
+		}
+		@media @tablet {
+			//padding: 10px 0px 10px 17px;
+			//box-shadow: 0 1px 4px fade(@black, 20%);
+		}
+		@media @desktop {
+			//padding: 10px 0px 10px 20px;
+		}
+	}
+	&_body {
+		min-width: 100%;
+	}
+	&_fields {
+		.gfield {
+			margin-bottom: @spaced;
+			&_label {
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				.font_size(17);
+				//font-weight: 400!important;
+				margin-bottom: 0px!important
+			}
+			&_description {
+				padding-top: 0!important;
+				.font_size(13)!important;
+				line-height: 1.2;
+			}
+			input {
+				margin-bottom: 8px;
+			}
+			&:before {
+				display: none;
+			}
+		}
+	}
+	&_footer {
+		margin-top: 0!important;
+		padding-bottom: 0!important;
+	}
+}

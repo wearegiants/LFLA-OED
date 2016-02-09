@@ -1,0 +1,44 @@
+#footer-modules {
+
+  .module {
+    margin-bottom: @fs-grid-gutter*2;
+  }
+
+  .footer-module-title {
+    margin: 0;
+  }
+
+  p {
+
+    .font_size(15);
+    color: @textGray;
+
+    @media @desktop {
+      .font_size(15);
+    }
+    @media @max {
+      .font_size(15);
+    }
+  }
+
+  .button {
+    .font_size(12);
+    margin-bottom: 0;
+  }
+
+}
+
+#foot {
+
+  //.gotham(300);
+  .font_size(15);
+
+  p { font-family: inherit; font-size: inherit;}
+
+  li {
+    &:before {
+      display: none;
+    }
+  }
+
+}

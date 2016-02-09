@@ -1,0 +1,35 @@
+.mfp {
+	&-content {
+		background: @white;
+		@media @desktop {
+			max-width: 65%;	
+			margin: @spaced auto;
+		}
+		img {
+			display: inline-block;
+			max-width: 100%;
+			height: auto;
+		}
+		.fs-row {
+			width: auto;
+		}
+		.section {
+			&-header {
+				padding: 0 @spaced*2;
+			}
+			&.template-text {
+				padding-top: 0;
+				padding-bottom: @spaced;
+				.section {
+					&-header {
+						display: none;
+					}
+				}
+			}
+			&-content {
+				.quotes();
+				font-weight: 300;
+			}
+		}
+	}
+}

@@ -1,0 +1,279 @@
+#home--header {
+
+  position: relative;
+  z-index: 999;
+  background: @black;
+  border-bottom: 1px solid @white25;
+
+  .btn {
+    border: none;
+  }
+
+  &-wrapper {
+
+    @media @desktop {
+      height: 60px;
+      overflow: hidden;
+      transition: 300ms ease;
+    }
+
+  }
+
+  &-upper, &-lower {
+    transition: 300ms ease;
+    &.active{
+      transform: translate(0, -100%);
+    }
+  }
+
+  &-social {
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    right: 20px;
+
+    @media @desktop {
+      display: block;
+    }
+
+    .btn-nav {
+      padding: 0;
+      .font_size(24);
+      i {
+        font-size: inherit;
+        position: relative;
+        top: .125em;
+      }
+    }
+
+  }
+
+  .text-center {
+
+    @media @min {
+      text-align: left;
+    }
+
+    @media @desktop {
+      text-align: center;
+    }
+
+  }
+
+  @media @min {
+    display: none;
+  }
+
+  @media @tablet {
+    display: block;
+  }
+
+  a {
+
+    color: @white;
+    //.gotham(500);
+
+    @media @min {
+      .font_size(12);
+      letter-spacing: 1px;
+    }
+
+    @media @desktop {
+      .font_size(14);
+      letter-spacing: 1px;
+    }
+
+    @media @max {
+      .font_size(15);
+      letter-spacing: 2px;
+    }
+
+  }
+
+  &.banner--clone {
+    position:fixed;
+    display: block;
+    top:0;
+    left:0;
+    width: 100%;
+    margin: 0;
+    z-index: 999;
+    //background: @white;
+    border-bottom: none;
+    -webkit-transform:translateY(-100%);
+    -ms-transform:translateY(-100%);
+    transform:translateY(-100%);
+    -webkit-transition:all 300ms ease-in-out;
+    -moz-transition:all 300ms ease-in-out;
+    transition:all 300ms ease-in-out;
+
+    #home--header-logo {
+      visibility: visible;
+      transition: 300ms ease;
+      display: block;
+      top: 0;
+      float: left;
+      height: 40px;
+      width: 40px;
+      margin-top: 10px;
+
+      @media @min {
+        display: none;
+      }
+
+      @media @desktop {
+        display: block;
+      }
+
+    }
+
+    a {
+
+      color: @white;
+
+      &:hover {
+        border-bottom-color: transparent;
+      }
+
+      @media @min {
+        &.btn-nav {
+          padding-left: 0;
+        }
+      }
+
+      @media @desktop {
+        &.btn-nav {
+          padding-left: 10px;
+        }
+      }
+
+    }
+
+    .hide {
+
+      display: inline-block;
+      margin-right: 8px;
+
+    }
+
+    #mobile-menu {
+      display: none;
+    }
+
+  }
+
+  &.banner--stick {
+    border-bottom: 1px solid @white25;
+    -webkit-transform:translateY(0%);
+    -ms-transform:translateY(0%);
+    transform:translateY(0%);
+
+  }
+
+  &-logo {
+
+    background: url(/assets/img/lfla--logo.png);
+    background-size: cover;
+    background-position: center center;
+    text-indent: -9999px;
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 20px;
+    top: 11px;
+
+    @media @min {
+      display: none;
+    }
+
+    @media @tablet {
+      display: none;
+    }
+
+    @media @desktop {
+      display: block;
+    }
+
+    &-mobile {
+
+      //background: url(/assets/img/lfla--logo.png);
+      background-size: cover;
+      background-position: center center;
+      text-indent: -9999px;
+      position: relative;
+      width: 40px;
+      height: 40px;
+      margin-right: @spaced/2;
+      top: 10px;
+      float: left;
+    }
+
+  }
+
+}
+
+#menuBtn {
+
+  @btnHeight: 2px;
+  @btnMargin: 5px;
+  width: 40px;
+  float: right;
+  display: inline-block;
+  cursor: pointer;
+
+  > span {
+
+    display: block;
+    height: (@btnHeight+@btnMargin)*3;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+
+    span {
+      background: @lightGray;
+      width: 100%;
+      text-indent: -9999px;
+      display: block;
+      height: @btnHeight;
+      margin-bottom: @btnMargin;
+    }
+
+  }
+
+}
+
+#mobile-menu {
+
+  //background: @teal;
+  z-index: 9;
+  position: fixed;
+  padding-top: 60px;
+  width: 100%;
+  top: 0;
+  transform: translate(0%, -100%);
+  transition: 300ms ease;
+
+  &.open {
+    transform: translate(0%,0%);
+    box-shadow: 0 0 15px @black25;
+  }
+
+  nav {
+    padding-top: 3px;
+    a {
+      color: @white;
+      @menuHeight: 40px;
+      display: block;
+      text-align: left;
+      border: 0;
+      height: @menuHeight;
+      line-height: @menuHeight;
+      &:last-child {
+        height: @menuHeight*1.25;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,59 @@
+.template-rr {
+
+  .book {
+
+    background-color: @textGray;
+    color: @white;
+    margin-bottom: @fs-grid-gutter*2;
+
+    a {
+      text-decoration: none;
+    }
+
+    &-date {
+      color: inherit;
+      margin: 0;
+    }
+
+    &-title {
+      color: inherit;
+      margin-top: 0;
+      line-height: 1.2;
+      @media @min{
+        .font_size(14);
+      }
+      @media @tablet {
+        .font_size(24);
+      }
+      @media @desktop {
+        .font_size(24);
+      }
+    }
+
+    &-subtitle {
+      color: inherit;
+      margin: 0;
+      @media @min{
+        .font_size(12);
+      }
+      @media @tablet {
+        .font_size(16);
+      }
+      @media @desktop {
+        .font_size(16);
+      }
+    }
+
+    @media @min{
+      min-height: 180px;
+    }
+    @media @tablet {
+      min-height: 275px;
+    }
+    @media @desktop {
+      min-height: 300px;
+    }
+
+  }
+
+}

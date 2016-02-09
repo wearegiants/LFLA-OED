@@ -1,0 +1,53 @@
+.template-calendar {
+
+  .event {
+
+    background-color: @black;
+    color: @white;
+
+    a {
+      text-decoration: none;
+    }
+
+    &-date {
+      color: inherit;
+      margin: 0;
+    }
+
+    &-title {
+      color: inherit;
+      margin: 0;
+      text-transform: uppercase;
+      font-weight: 500;
+      line-height: 1.1;
+      letter-spacing: 1px;
+    }
+
+    &-subtitle {
+      color: inherit;
+      margin: 0;
+    }
+
+    @media @min{
+      min-height: 225px;
+      margin-bottom: 5px;
+    }
+    @media @tablet {
+      min-height: 275px;
+      margin-bottom: 0;
+    }
+    @media @desktop {
+      min-height: 275px;
+    }
+
+    .centered {
+      z-index: 99;
+    }
+
+    .fs-background-container {
+      opacity: .35; 
+    }
+
+  } 
+
+}

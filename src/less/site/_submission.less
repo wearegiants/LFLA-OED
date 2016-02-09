@@ -1,0 +1,61 @@
+#submission, #word-submission {
+  &-close {
+    display: block;
+    height: 70px;
+    width: 70px;
+    background: @black;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url('/assets/img/1454744430_53-interface_-_cross_cancel.svg') center center no-repeat;
+    background-size: 20px 20px;
+    z-index: 99;
+    opacity: .5;
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &-form {
+    display: none;
+    background-color: @black50;
+    z-index: 999;
+    position: fixed;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    overflow: scroll;
+    .wrapper {
+      background: @white;
+      li {
+        &:before {
+          display: none;
+        }
+        label {
+          //text-transform: uppercase;
+          letter-spacing: .5px
+        }
+      }
+    }
+    .gform {
+      &_wrapper {
+        margin: 0;
+      }
+      &_heading {
+        margin: 0;
+        margin-bottom: @spaced;
+      }
+      &_title {
+        margin-bottom: 0;
+      }
+      &_footer {
+        padding-top: 0;
+        padding-bottom: 0;
+        input {
+          background: @blue;
+          margin-bottom: 0;
+          border-radius: 3px!important;
+          //.gotham(600)!important;
+        }
+      }
+    }
+  }
+}

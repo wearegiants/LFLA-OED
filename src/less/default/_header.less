@@ -1,0 +1,44 @@
+#header {
+
+  //padding: @spaced 0;
+  position: relative;
+  z-index: 99;
+  background: fade(@black,99%);
+
+  &--logo {
+    margin: 0;
+    font-weight: 700;
+    color: @white;
+  }
+
+  &-navigation {
+
+    @media @min {
+      text-align: left;
+    }
+
+    @media @tablet {
+      text-align: right;
+    }
+
+  }
+
+  .menu {
+
+    padding: 0;
+    margin: 0;
+
+
+    li {
+
+      margin: 0;
+
+      &:before {
+        display: none;
+      }
+
+    }
+
+  }
+
+}

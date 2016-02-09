@@ -1,0 +1,64 @@
+.template-features {
+
+  .feature {
+
+    background-color: @black;
+    color: @white;
+
+    a {
+      text-decoration: none;
+    }
+
+    &-date {
+      color: inherit;
+      margin: 0;
+    }
+
+    &-title {
+      color: inherit;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    &-subtitle {
+      color: inherit;
+      margin: 0;
+    }
+
+    @media @min{
+      min-height: 300px;
+    }
+    @media @tablet {
+      min-height: 275px;
+    }
+    @media @desktop {
+      min-height: 275px;
+    }
+
+    &:first-child {
+
+      background: @black;
+
+      @media @min{
+        //min-height: 425px;
+      }
+      @media @tablet {
+        min-height: 425px;
+      }
+      @media @desktop {
+        min-height: 425px;
+      }
+    }
+
+    .centered {
+      z-index: 99;
+    }
+
+    .fs-background-container {
+      opacity: .35; 
+    }
+
+  }
+
+}
