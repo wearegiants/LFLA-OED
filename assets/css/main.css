@@ -1115,7 +1115,7 @@
   visibility: hidden;
   width: 40px;
   height: 40px;
-  background: #fff;
+  background: transparent;
   border-radius: 100%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
   margin: auto;
@@ -1147,29 +1147,29 @@
 .fs-carousel-enabled .fs-carousel-control_previous,
 .fs-carousel-enabled.fs-carousel-rtl .fs-carousel-control_next {
   right: auto;
-  left: 20px;
+  left: 5px;
 }
 .fs-carousel-enabled .fs-carousel-control_previous:before,
 .fs-carousel-enabled.fs-carousel-rtl .fs-carousel-control_next:before {
-  border-top: 7px solid transparent;
-  border-bottom: 7px solid transparent;
-  border-right: 10.5px solid #333;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-right: 6px solid #fff;
   border-left: none;
-  margin-left: 13.7px;
+  margin-left: 16.4px;
   margin-right: auto;
 }
 .fs-carousel-enabled .fs-carousel-control_next,
 .fs-carousel-enabled.fs-carousel-rtl .fs-carousel-control_previous {
-  right: 20px;
+  right: 5px;
   left: auto;
 }
 .fs-carousel-enabled .fs-carousel-control_next:before,
 .fs-carousel-enabled.fs-carousel-rtl .fs-carousel-control_previous:before {
-  border-top: 7px solid transparent;
-  border-bottom: 7px solid transparent;
-  border-left: 10.5px solid #333;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-left: 6px solid #fff;
   border-right: none;
-  margin-right: 13.7px;
+  margin-right: 16.4px;
   margin-left: auto;
 }
 .fs-carousel-enabled .fs-carousel-control_disabled {
@@ -4662,6 +4662,14 @@ img.rounded {
   width: 1px;
   margin: auto;
 }
+.coverlink {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
 *:link,
 *:visited,
 *:active,
@@ -5381,8 +5389,14 @@ input[type=button] {
 .template-features .feature .fs-background-container {
   opacity: .35;
 }
+.template-links .link {
+  color: #fff;
+  background: #666666;
+  margin-bottom: 2.08333333%;
+}
 .template-links .link a {
   text-decoration: none;
+  color: #fff;
 }
 .template-links .link-date {
   color: inherit;
@@ -5391,18 +5405,53 @@ input[type=button] {
 .template-links .link-title {
   color: inherit;
   margin: 0;
+  line-height: 1.2;
 }
 .template-links .link-subtitle {
   color: inherit;
   margin: 0;
 }
+@media screen and (min-width: 300px) {
+  .template-links .link {
+    height: 200px;
+  }
+}
+@media screen and (min-width: 740px) {
+  .template-links .link {
+    height: 200px;
+  }
+}
+@media screen and (min-width: 980px) {
+  .template-links .link {
+    height: 300px;
+  }
+}
 .template-rr .book {
-  background-color: #666666;
   color: #fff;
-  margin-bottom: 2.08333333%;
 }
 .template-rr .book a {
   text-decoration: none;
+  color: #fff;
+}
+.template-rr .book-wrapper {
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+  border-radius: 3px;
+  margin: 0 5px;
+  -webkit-transition: 600ms ease;
+  transition: 600ms ease;
+}
+.template-rr .book-wrapper:hover {
+  box-shadow: inset 0 0 0 1px #fff;
+}
+@media screen and (min-width: 300px) {
+  .template-rr .book-wrapper {
+    height: 110px;
+  }
+}
+@media screen and (min-width: 740px) {
+  .template-rr .book-wrapper {
+    height: 120px;
+  }
 }
 .template-rr .book-date {
   color: inherit;
@@ -5410,63 +5459,14 @@ input[type=button] {
 }
 .template-rr .book-title {
   color: inherit;
-  margin-top: 0;
+  margin: 0;
   line-height: 1.2;
-}
-@media screen and (min-width: 300px) {
-  .template-rr .book-title {
-    font-size: 14px;
-    font-size: 0.875rem;
-  }
-}
-@media screen and (min-width: 740px) {
-  .template-rr .book-title {
-    font-size: 24px;
-    font-size: 1.5rem;
-  }
-}
-@media screen and (min-width: 980px) {
-  .template-rr .book-title {
-    font-size: 24px;
-    font-size: 1.5rem;
-  }
+  display: block;
 }
 .template-rr .book-subtitle {
   color: inherit;
   margin: 0;
-}
-@media screen and (min-width: 300px) {
-  .template-rr .book-subtitle {
-    font-size: 12px;
-    font-size: 0.75rem;
-  }
-}
-@media screen and (min-width: 740px) {
-  .template-rr .book-subtitle {
-    font-size: 16px;
-    font-size: 1rem;
-  }
-}
-@media screen and (min-width: 980px) {
-  .template-rr .book-subtitle {
-    font-size: 16px;
-    font-size: 1rem;
-  }
-}
-@media screen and (min-width: 300px) {
-  .template-rr .book {
-    min-height: 180px;
-  }
-}
-@media screen and (min-width: 740px) {
-  .template-rr .book {
-    min-height: 275px;
-  }
-}
-@media screen and (min-width: 980px) {
-  .template-rr .book {
-    min-height: 300px;
-  }
+  color: rgba(255, 255, 255, 0.5);
 }
 #submission-close,
 #word-submission-close {

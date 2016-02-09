@@ -103,16 +103,16 @@ if ($popup) {
 ?>
 
 <script>
-  $(window).load(function () {
-    $.magnificPopup.open({
-      items: {
-        src: '#ruscha-piece' 
-      },
-      type: 'inline',
-      preloader: false,
-      mainClass: 'my-mfp-zoom-in fs-grid',
-    }, 0);
-  });
+//  $(window).load(function () {
+//    $.magnificPopup.open({
+//      items: {
+//        src: '#ruscha-piece' 
+//      },
+//      type: 'inline',
+//      preloader: false,
+//      mainClass: 'my-mfp-zoom-in fs-grid',
+//    }, 0);
+//  });
 </script>
 
 
