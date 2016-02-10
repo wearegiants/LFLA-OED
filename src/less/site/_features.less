@@ -26,6 +26,14 @@
       margin: 0;
     }
 
+    &__small {
+      .feature {
+        &-subtitle{
+          line-height: 1.2;
+        }
+      }
+    }
+
     @media @min{
       min-height: 375px;
     }
@@ -33,7 +41,10 @@
       min-height: 325px;
     }
     @media @desktop {
-      min-height: 325px;
+      min-height: 385px;
+    }
+    @media @max {
+      min-height: 355px;
     }
 
     &:first-child {

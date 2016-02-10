@@ -108,7 +108,10 @@ function popup(){
 				} else {
 					this.st.focus = '#name';
 				}
-			}
+			},
+      afterOpen: function() {
+        $(".carousel").carousel();
+      }
 		}
 	});
 }
