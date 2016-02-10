@@ -88,7 +88,7 @@ if ($popup) {
 <?php if (get_field('after_the_content')):?>
   <hr class="invisible compact">
   <div class="fs-row">
-    <div class="fs-cell fs-lg-10 fs-md-5 fs-sm-3 fs-centered">
+    <div class="fs-cell fs-lg-11 fs-md-6 fs-sm-3 fs-centered">
       <div class="section-desc" style="color: <?php echo $descColor; ?>">
 <?php the_field('after_the_content'); ?>
       </div>

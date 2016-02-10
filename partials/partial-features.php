@@ -12,7 +12,7 @@
 <?php endif; ?>
 
 <div class="centered centered-full">
-<div class="wrapper text-center">
+<div class="wrapper wrapper-extra text-center">
 
   <h4 class="feature-date"><?php echo $feature['date']; ?></h4>
   <h2 class="feature-title"><?php echo $feature['title']; ?></h2>

@@ -27,6 +27,18 @@ function mobileNav(){
 
 }
 
+function openSubmission(){
+  if(window.location.hash == '#word-submission') {
+
+    $("#about-the-project .inline-modal").click();
+  
+  } else {
+  
+    console.log('noo, noo');
+
+  }
+}
+
 function smoothScroll(){
   $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
@@ -115,5 +127,6 @@ $(document).ready(function(){
 	smoothScroll();
 	headerhover();
 	header();
+  openSubmission();
 	mobileNav();
 });

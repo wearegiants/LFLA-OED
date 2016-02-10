@@ -2245,6 +2245,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/pages\/template-featuredimage.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/pages\/template-featuredimage.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/pages\/template-features.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -2331,6 +2340,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/partials\/partial-essay.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/partials\/partial-featuredimage.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/partials\/partial-featuredimage.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -2711,7 +2729,7 @@
 		},
 	"\/src\/bower_components\/Formstone\/dist\/js\/equalize.js": {
 		"fileType": 64,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/bower_components\/Formstone\/dist\/js\/equalize.js",
 		"outputAbbreviatedPath": "\/src\/bower_components\/Formstone\/dist\/js\/min\/equalize-min.js",
@@ -3945,7 +3963,7 @@
 		"disableJavascript": 0,
 		"fileType": 1,
 		"ieCompatibility": 1,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/src\/bower_components\/Formstone\/src\/less\/equalize.less",
 		"outputAbbreviatedPath": "\/src\/bower_components\/Formstone\/src\/css\/equalize.css",
@@ -15972,7 +15990,7 @@
 		"outputAbbreviatedPath": "\/assets\/css\/main.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1,
-		"outputStyle": 0,
+		"outputStyle": 1,
 		"relativeURLS": 0,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
