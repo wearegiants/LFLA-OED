@@ -9,14 +9,14 @@
 <div class="wrapper text-center">
 
   <a href="<?php echo $link['url']; ?>" target="blank">
-  <h4 class="link-date"><?php echo $link['date']; ?></h4>
-  <h2 class="link-title"><?php echo $link['title']; ?></h2>
-  <h5 class="link-subtitle"><?php echo $link['subtitle']; ?></h5>
+    <h4 class="link-date"><?php echo $link['date']; ?></h4>
+    <h2 class="link-title"><?php echo $link['title']; ?></h2>
+    <h5 class="link-subtitle"><?php echo $link['subtitle']; ?></h5>
   </a>
 
 </div>
 </div>
-<img src="/assets/img/document.svg" class="link-bg img-responsive" alt="<?php echo $link['title']; ?>">
+<div class="link-bg covered" style="background-image:url(<?php echo $link['image']['url'];?>)"></div>
 </div>
 
 <?php endforeach; ?>

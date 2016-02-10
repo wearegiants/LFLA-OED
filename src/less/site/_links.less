@@ -6,6 +6,7 @@
     //background: @textGray;
     margin-bottom:  @fs-grid-gutter*2;
 
+
     a {
       text-decoration: none;
       color: @white;
@@ -17,8 +18,10 @@
     }
 
     &-bg {
-      opacity: .2;
+      opacity: .33;
       transition: 600ms ease;
+      background-size: cover;
+      background-position: center center;
     }
 
     &:hover {
@@ -53,13 +56,13 @@
     }
 
     @media @min {
-      //height: 200px;
+      height: 200px;
     }
     @media @tablet {
-      //height: 200px
+      height: 200px
     }
     @media @desktop {
-      //height: 300px
+      height: 300px
     }
 
   }

@@ -3,10 +3,21 @@
   .book {
 
     color: @white;
+    overflow: hidden;
 
     a {
       text-decoration: none;
       color: @white;
+    }
+
+    .wrapper {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    &-image {
+      position: absolute;
+      width: auto;
     }
 
     &-wrapper {
@@ -19,9 +30,27 @@
       }
       @media @min {
         height: 110px;
+        .wrapper {
+          padding-left: 100px;
+        }
+        img {
+          height: 100px;
+          left: 15px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
       }
       @media @tablet {
         height: 120px;
+        .wrapper {
+          padding-left: 100px;
+        }
+        img {
+          height: 100px;
+          left: 15px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
       }
     }
 
