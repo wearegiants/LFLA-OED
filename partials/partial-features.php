@@ -18,7 +18,7 @@
   <h2 class="feature-title"><?php echo $feature['title']; ?></h2>
   <h5 class="feature-subtitle"><?php echo $feature['subtitle']; ?></h5>
   <br>
-  <?php if (strpos($feature['url'], '#') !== false): ?>
+  <?php if (0 === strpos($feature['url'], '#')): ?> 
   <a href="<?php echo $feature['url']; ?>" class="btn btn--primary inline-modal"><?php echo $feature['button_text']; ?></a>
   <?php else: ?>
   <a href="<?php echo $feature['url']; ?>" class="btn btn--primary" target="blank"><?php echo $feature['button_text']; ?></a>
