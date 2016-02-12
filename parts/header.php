@@ -35,8 +35,8 @@
 </div>
 </div>
 <div id="home--header-social">
-<a href="https://twitter.com/home?status=" class="btn btn-nav"><i class="ss-social-circle ss-icon">twitter</i></a>
-<a href="https://www.facebook.com/sharer/sharer.php?u=" class="btn btn-nav"><i class="ss-social-circle ss-icon">facebook</i></a>
+<a href="https://twitter.com/home?status=" class="btn btn-nav btn-nav_icon ss-social-circle ss-twitter"></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=" class="btn btn-nav btn-nav_icon ss-social-circle ss-facebook"></a>
 </div>
 </div>
 </div>
