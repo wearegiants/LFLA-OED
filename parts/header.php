@@ -22,7 +22,7 @@
 </div>
 <div class="fs-cell fs-lg-hide fs-md-5 fs-sm-2">
 <a href="http://lfla.org" id="home--header-logo-mobile" class="btn btn-nav btn-first site-logo" target="blank">The Library Foundation of Los Angeles</a>
-<a href="#home--wrapper" class="btn btn-nav">To Live and Dine in LA</a>
+<a href="#home--wrapper" class="btn btn-nav">Hollywood is a Verb</a>
 </div>
 <div class="fs-cell fs-lg-hide fs-md-1 fs-sm-1 fs-right">
 <a id="menuBtn" class="btn btn-nav btn-last text-right" href="#">
