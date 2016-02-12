@@ -31,12 +31,13 @@
 <header id="header">
   <div class="fs-row">
     <menu id="header-main" class="fs-cell fs-lg-hide fs-md-hide fs-sm-2">
-      <a id="home--header-logo" class="site-logo" href="http://lfla.org" target="blank">The Library Foundation of Los Angeles</a>
+      <a id="header__logo" class="site-logo" href="http://lfla.org" target="blank">The Library Foundation of Los Angeles</a>
     </menu>
     <menu id="header-mobile" class="fs-cell fs-lg-hide fs-md-hide fs-sm-1 text-right">
-      <a data-swap-target="#mobile-menu" class="mobile-toggle btn btn--hamburg right btn--nav btn_first btn_last">&nbsp;</a>
+      <a data-swap-target="#mobile-menus" id="menuBtn" class="mobile-toggle btn btn--hamburg right btn--nav btn_first btn_last">&nbsp;</a>
     </menu>
   </div>
+  <?php include locate_template('parts/mobile-menu.php' ); ?>
 </header>
 
 <header id="home--header">

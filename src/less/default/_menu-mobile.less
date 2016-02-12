@@ -1,11 +1,21 @@
 #mobile {
 
-	&-menu {
-		.cover();
-		position: fixed;
-		background: rgba(0,0,0,.9);
-		padding-top: 125px;
+	&-menus {
+		//position: fixed;
+		background-color: @blue;
+		padding: @spaced 0;
 		display: none;
+		z-index: 999;
+		color: @white;
+		box-shadow: 0 0 @spaced @black25;
+		a.btn-mobile {
+			color: inherit;
+			background: transparent!important;
+			border-bottom: 1px solid @white25;
+			&:last-child {
+				border-bottom: none;
+			}
+		}
 		&.fs-swap {
 			&-active {
 				display: block;

@@ -2,7 +2,7 @@
 
 function mobileNav(){
 
-  var $mobileNav = $('#mobile-menu');
+  var $mobileNav = $('#mobile-menus');
 
   function activeMobile(){
 
@@ -21,7 +21,7 @@ function mobileNav(){
     activeMobile();
   });
 
-  $('#mobile-menu').find('a').on('click',function(){
+  $('#mobile-menus').find('a').on('click',function(){
     closeMobile();
   });
 

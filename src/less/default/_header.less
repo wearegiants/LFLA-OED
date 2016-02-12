@@ -1,15 +1,31 @@
 #header {
 
   //padding: @spaced 0;
-  position: relative;
+  @media @min {
+    position: fixed;
+    width: 100%;
+  }
+  @media @tablet {
+    position: relative;  
+  }
+  
   z-index: 99;
-  background-color: @black;
-  border-bottom: 1px solid @white25;
+  background-color: fade(@black, 99%);
 
   &--logo {
     margin: 0;
     font-weight: 700;
     color: @white;
+  }
+
+  &__logo {
+    background: url(/assets/img/lfla--logo.png);
+    height: 60px;
+    width: 60px;
+    background-size: cover;
+    display: block;
+    margin: 0;
+    text-indent: -9999px;
   }
 
   &-navigation {
