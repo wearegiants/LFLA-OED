@@ -15,7 +15,13 @@
 		}
 		.section {
 			&-header {
-				padding: 0 @spaced*2;
+				@media @min {
+					padding: 0 @spaced/1.5;
+				}
+				@media @tablet {
+					padding: 0 @spaced*2;	
+				}
+				
 			}
 			&.template-text {
 				padding-top: 0;
@@ -28,6 +34,12 @@
 			}
 			&-content {
 				.quotes();
+				@media @min {
+					padding: 0 @spaced/1.5;
+				}
+				@media @tablet {
+					padding: 0;
+				}
 				font-weight: 300;
 			}
 		}
