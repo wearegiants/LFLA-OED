@@ -45,6 +45,14 @@ input[type=button] {
     text-transform: uppercase;
     letter-spacing: 1px;
     border-radius: 3px;
+    @media @min {
+      .font_size(15);
+      letter-spacing: 0;
+    }
+    @media @tablet {
+      .font_size(17);
+      letter-spacing: 1px;
+    }
     .headerFont();
     &:hover {
       background: darken(@blue, 10%)
@@ -75,8 +83,8 @@ input[type=button] {
   &--logo {
     background: transparent;
     font-weight: 400;
-    height: @height_nav;
-    line-height: @height_nav;
+    height: 60px;
+    line-height: 60px;
     &:hover {
       background: transparent;
       text-decoration: none;
@@ -94,10 +102,10 @@ input[type=button] {
       margin-top: -5px;
       width: 1em;
       height: 1px;
-      background: @black25;
+      background: @white;
       box-shadow: 
-        0 4px 0 0 @black25,
-        0 8px 0 0 @black25;
+        0 4px 0 0 @white,
+        0 8px 0 0 @white;
     }
     &.right {
       padding-right: 1.5em!important;
@@ -113,10 +121,10 @@ input[type=button] {
         margin-top: -5px;
         width: 1em;
         height: 1px;
-        background: @black25;
+        background: @white;
         box-shadow: 
-          0 0.25em 0 0 @black25,
-          0 0.5em 0 0 @black25;
+          0 0.25em 0 0 @white,
+          0 0.5em 0 0 @white;
       }
     }
   }

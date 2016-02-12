@@ -1,6 +1,11 @@
 .section {
 
-  padding: @spaced*2.5 0;
+  @media @min {
+    padding: @spaced 0;  
+  }
+  @media @tablet {
+    padding: @spaced*2.5 0;  
+  }
   overflow: hidden;
   .font_size(19);
 
@@ -14,7 +19,13 @@
     letter-spacing: 1px;
     font-weight: 900;
     color: @blue;
-    text-rendering: optimizeLegibility
+    text-rendering: optimizeLegibility;
+    @media @min {
+      .font_size(26);
+    }
+    @media @tablet {
+      .font_size(32);
+    }
   }
 
   &-desc {
