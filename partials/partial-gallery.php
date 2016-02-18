@@ -1,6 +1,6 @@
 <div class="fs-row">
 <div class="fs-cell fs-all-full">
-<div class="gallery carousel zoom-gallery" data-carousel-options='{"show":{"320px":2, "740px":5,"980px":5,"1220px":5}}'>
+<div class="gallery carousel zoom-gallery" data-carousel-options='{"show":{"320px":2, "740px":3,"980px":4,"1220px":6}}'>
 
 <?php $images = get_field('gallery'); ?>
 <?php if ($images): ?>
