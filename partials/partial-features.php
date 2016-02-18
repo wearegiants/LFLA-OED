@@ -8,7 +8,7 @@
 <?php if ($counter == 1): ?>
 <div class="feature fs-cell fs-all-full fs-contained relative wallpaper" data-background-options='{"source":"<?php echo $feature['image']['url']; ?>"}'>
 <?php else: ?>
-<div class="feature feature__small fs-cell fs-lg-third fs-md-full fs-sm-full fs-contained relative wallpaper" data-background-options='{"source":"<?php echo $feature['image']['url']; ?>"}'>
+<div class="feature feature__small fs-cell fs-lg-half fs-md-full fs-sm-full fs-contained relative wallpaper" data-background-options='{"source":"<?php echo $feature['image']['url']; ?>"}'>
 <?php endif; ?>
 
 <div class="centered centered-full">
