@@ -1,0 +1,30 @@
+.swap-hide {
+
+  .cover();
+  position: fixed;
+  z-index: 99;
+  background: @black50;
+  opacity: 0;
+  transition: 300ms ease;
+  pointer-events: none;
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    display:none;
+  }
+
+  &.fs-swap {
+    &-active {
+      pointer-events: auto;
+      opacity: 1;
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        display:block;
+      }
+    }
+  }
+
+  .centered {
+    background: @white;
+    padding: @spaced;
+  }
+
+}

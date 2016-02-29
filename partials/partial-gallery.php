@@ -1,6 +1,6 @@
 <div class="fs-row">
 <div class="fs-cell fs-all-full">
-<div class="gallery carousel zoom-gallery" data-carousel-options='{"show":{"320px":2, "740px":3,"980px":4,"1220px":6}}'>
+<div class="gallery carousel" data-carousel-options='{"show":{"320px":2, "740px":3,"980px":4,"1220px":3}}'>
 
 <?php $images = get_field('gallery'); ?>
 <?php if ($images): ?>
@@ -8,7 +8,7 @@
 
   <div class="gallery__item relative text-center relative">
   	<div class="gallery__item-wrapper relative">
-  		<a href="<?php echo $image['url']; ?>" class="covered" target="blank"></a>
+  		<!--<a href="<?php echo $image['url']; ?>" class="covered" target="blank"></a>-->
   		<div class="wrapper">
   			<img src="<?php echo $image['sizes']['large']; ?>" class="img-responsive" />
   		</div>

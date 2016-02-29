@@ -103,14 +103,17 @@ function popup(){
 		// It looks not nice, so we disable it:
 		callbacks: {
 			beforeOpen: function() {
+        //alert('yolo');
 				if($(window).width() < 700) {
 					this.st.focus = false;
 				} else {
 					this.st.focus = '#name';
 				}
 			},
-      afterOpen: function() {
-        $(".carousel").carousel();
+      open: function() {
+        //alert('yolo');
+        //$(".carousel").carousel();
+
       }
 		}
 	});
