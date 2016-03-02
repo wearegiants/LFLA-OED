@@ -78,7 +78,7 @@ if ($popup) {
 <div id="<?php echo $post->post_name;?>" <?php post_class('section section-bg ' . "$pageClass" . "$popup"); ?> style="background-image:url(<?php echo $bgImage["sizes"]["gallery-lg"]; ?>);">
 <?php endif;?>
 
-  <?php if(get_field('swap_field')){ echo '<div class="centered"><div class="text-right"><a style="text-decoration:none" class="ss-gizmo ss-delete swap toggle_linked" data-swap-target="#' . $post->post_name . '" data-swap-linked="toggle_linked"></a></div>';} ?>
+  <?php if(get_field('swap_field')){ echo '<div class="centered"><div class="text-right"><a style="text-decoration:none" class="close ss-gizmo ss-delete swap toggle_linked" data-swap-target="#' . $post->post_name . '" data-swap-linked="toggle_linked"></a></div>';} ?>
 
   <div class="section-header">
     <div class="text-center">

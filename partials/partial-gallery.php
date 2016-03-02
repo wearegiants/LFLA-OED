@@ -1,5 +1,5 @@
 <div class="fs-row">
-<div class="fs-cell fs-all-full">
+<div class="fs-cell fs-lg-11 fs-md-5 fs-sm-3 fs-centered">
 <div class="gallery carousel" data-carousel-options='{"show":{"320px":1, "740px":2,"980px":3,"1220px":3}}'>
 
 <?php $images = get_field('gallery'); ?>
